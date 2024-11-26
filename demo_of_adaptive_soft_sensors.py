@@ -43,7 +43,7 @@ svr_gammas = 2 ** np.arange(-20, 11, dtype=float)  # γ の候補
 lwpls_lambdas = 2 ** np.arange(-9, 6, dtype=float)
 
 # データセットの読み込み
-dataset = pd.read_csv('debutanizer_y_10.csv', encoding='SHIFT-JIS', index_col=0)
+dataset = pd.read_csv('adaptive_soft_sensors/debutanizer_y_10.csv', encoding='SHIFT-JIS', index_col=0)
 y = dataset.iloc[:, 0:1]
 x_tmp = dataset.iloc[:, 1:]
 
